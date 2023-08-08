@@ -135,6 +135,13 @@ fsearch () {
     (flatpak run io.github.cboxdoerfer.FSearch $*)
 }
 
+brave () {
+    (flatpak run com.brave.Browser $*)
+}
+
 
 # Make OmniSharp use the correct paths for Unity
 export FrameworkPathOverride="/lib/mono/4.5"
+
+# Used by haskell
+[ -f "/home/cachandler/.ghcup/env" ] && source "/home/cachandler/.ghcup/env" # ghcup-env
