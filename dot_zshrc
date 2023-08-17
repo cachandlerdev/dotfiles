@@ -114,6 +114,9 @@ export INFOPATH="/usr/local/texlive/2023/texmf-dist/doc/info:$INFOPATH"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Call python3 when python command is run.
+alias python="python3"
+
 # Open the nvim server that has to be launched before opening a c# project in
 # unity.
 alias nvim-unity="nvim --listen /tmp/nvimsocket"
