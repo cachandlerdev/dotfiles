@@ -117,6 +117,12 @@ export INFOPATH="/usr/local/texlive/2023/texmf-dist/doc/info:$INFOPATH"
 # Call python3 when python command is run.
 alias python="python3"
 
+# Shortcut for copy paste from terminal
+# Usage: (command whose output to copy) | c
+# Usage: cd `v`
+alias "c=xclip -selection clipboard"
+alias "v=xclip -o -selection clipboard"
+
 # Open the nvim server that has to be launched before opening a c# project in
 # unity.
 alias nvim-unity="nvim --listen /tmp/nvimsocket"
@@ -148,3 +154,4 @@ export FrameworkPathOverride="/lib/mono/4.5"
 
 # Used by haskell
 [ -f "/home/cachandler/.ghcup/env" ] && source "/home/cachandler/.ghcup/env" # ghcup-env
+
