@@ -186,6 +186,7 @@ let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_priority = -1
 
 " Add fzf for fuzzy searching files, buffers, etc.
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Make the annoying search highlight disappear after you're done searching.
