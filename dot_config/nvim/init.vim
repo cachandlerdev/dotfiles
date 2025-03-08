@@ -232,3 +232,9 @@ map <silent> <C-n> :NERDTreeFocus<CR>
 
 " Keep markdown unfolded by default
 set foldlevelstart=6
+
+set tags=./tags,tags;/
+
+" Shortcuts for fzf
+nnoremap <C-p> :GFiles<Cr>
+nnoremap <C-[> :Files<Cr>
