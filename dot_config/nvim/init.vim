@@ -238,3 +238,7 @@ set tags=./tags,tags;/
 " Shortcuts for fzf
 nnoremap <C-p> :GFiles<Cr>
 nnoremap <C-[> :Files<Cr>
+if has("nvim")
+  au TermOpen * tnoremap <buffer> <Esc> <c-\><c-n>
+  au FileType fzf tunmap <buffer> <Esc>
+endif
